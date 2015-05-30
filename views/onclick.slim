@@ -1,9 +1,14 @@
 h2 items
 
+script
+  | function changeItem(itemId) {
+  |   console.log("change to " + itemId);
+  | }
+
 ul
   li
-    a id="item1" href="#item1" onclick="console.log('clicked')"
+    a id="item1" href="#item1" onclick="changeItem(1)"
       | item 1
   li
-    a id="item2" href="#item2"
+    a id="item2" href="#item2" onclick="changeItem(2)"
       | item 2
